@@ -7,6 +7,10 @@ li{
     margin: 10px;
     text-align: left;
     padding: 1rem;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
 }
 .list-item{
     border: none;

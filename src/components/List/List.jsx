@@ -11,7 +11,7 @@ const List = (props) => {
     }
     const displayList = listItems.map((item) => {
         return (
-            <li>
+            <li key = {item}>
                 {/*<input type="checkbox" id={item} onClick={handleCheckBox}></input>*/}
                 <button id={item} onClick={handleStrike} class="list-item">{item}</button>
                 <button onClick={handleDelete} id={item}>-</button>

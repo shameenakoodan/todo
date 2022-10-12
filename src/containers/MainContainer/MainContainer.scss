@@ -1,0 +1,21 @@
+input{
+    border: 1px solid black;
+    border-radius: 6px;
+    min-height: 4rem;
+    width: 100rem;
+    font-size: large;
+}
+#add{
+    min-height: 4rem;
+    margin: 10px;
+    width: 30rem;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+.add-todo{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}

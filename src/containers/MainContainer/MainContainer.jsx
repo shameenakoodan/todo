@@ -1,6 +1,7 @@
 import { useState } from "react";
 import List from "../../components/List/List";
 import { useRef } from 'react';
+import './MainContainer.scss';
 
 const MainContainer = ()=>{
     const [inputValue,setInputValue] = useState("");
@@ -27,8 +28,11 @@ const MainContainer = ()=>{
     }
     return (
         <>
+            <div className="add-todo">
             <input type="text" default = "Enter here ..." onChange={handleChange} ref={ref} onFocus={setNull}/>
-            <button id = "+" onClick={handleAddButtonClick}>+</button>
+            <button id = "add" onClick={handleAddButtonClick}>Add</button>
+            </div>
+            
             <List listItems ={listItems} handleDelete={handleDelete}/>
         </>
     )
