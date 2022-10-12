@@ -2,10 +2,7 @@ import './List.scss';
 
 const List = (props) => {
     const { listItems, handleDelete} = props;
-    const handleCheckBox = (event)=>{
-        const id = event.target.id;
-        document.getElementById(id).style.setProperty('text-decoration','line-through');
-    };
+    
     const handleStrike = (event)=>{
         event.target.style.setProperty('text-decoration','line-through');
     }
@@ -13,7 +10,7 @@ const List = (props) => {
         return (
             <li key = {item}>
                 {/*<input type="checkbox" id={item} onClick={handleCheckBox}></input>*/}
-                <button id={item} onClick={handleStrike} class="list-item">{item}</button>
+                <button id={item} onClick={handleStrike} className="list-item">{item}</button>
                 <button onClick={handleDelete} id={item}>-</button>
             </li>
         )
